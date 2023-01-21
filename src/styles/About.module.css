@@ -1,0 +1,145 @@
+.main {
+  font-family: 'Roboto', sans-serif;
+  color:rgb(37, 36, 36);
+  background-color: rgb(218, 217, 216);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeContainer {
+  background-color: rgb(255, 253, 250);
+  width: 60vw;
+  max-width: 768px;
+  margin: 0 0 0 0;
+  padding: 32px;
+  border: 1px solid rgb(192, 189, 189);
+}
+
+.aboutMeContainer > h1 {
+  position: relative;
+  font-size: 2.5rem;
+  margin: 0 0 0 0;
+  padding-bottom: 24px;
+}
+
+.aboutMeContainer > button {
+  position: relative;
+  font-size: 1rem;
+  margin: 16px 0 0 0;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  border: 1px solid rgb(192, 189, 189);
+  background-color: #FFFDFA;
+  color: rgb(37, 36, 36);
+  cursor: pointer;
+}
+
+.aboutMeContainer > button:hover {
+  background-color: rgb(218, 217, 216);
+  transition: 0.5s;
+}
+
+.aboutMeContainer > button > img {
+  position: relative;
+  top: 2.5px;
+  left: -4px;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.informationContainer {
+  width: 60vw;
+  max-width: 768px;
+  border: 1px solid rgb(192, 189, 189);
+  background-color: rgb(255, 253, 250);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding: 32px;
+}
+
+.languagesContainer {
+  position: relative;
+  width: 50%;
+  height: 144px;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.languagesContainer > h2 {
+  margin-bottom: 16px;
+}
+
+.personalInformationContainer {
+  position: relative;
+  width: 50%;
+  height: 144px;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.informationDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
+.variableInformation {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignedInformation {
+  display: flex;
+  flex-direction: column;
+}
+
+.filledCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgb(37, 36, 36);
+  background-color: rgb(37, 36, 36);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.unfilledCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgb(37, 36, 36);
+  background-color: rgb(255, 253, 250);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 0 0 0;
+}
