@@ -1,4 +1,5 @@
 .infoContainer {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,7 +41,7 @@
   display: block;
   width: 15%;
   height: 2px;
-  background: #000;
+  background: #97caca;
   position: absolute;
   top: 50%;
   left: 0;
@@ -52,7 +53,7 @@
   display: block;
   width: 15%;
   height: 2px;
-  background: #000;
+  background: #97caca;
   position: absolute;
   top: 50%;
   right: 0;
@@ -121,9 +122,20 @@
   justify-content: space-between;
 }
 
+.infoContainer::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #97caca;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 2vh;
+}
+
 @media (max-width: 768px) {
   .infoContainer {
-    position: relative;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -131,16 +143,8 @@
     margin-top: 2vh;
   }
 
-  .infoContainer::before {
-    content: '';
-    display: block;
-    width: 100%;
+  .infoContainer::after {
     height: 1px;
-    background: #000;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 2vh;
   }
 
   .personalInfoContainer {

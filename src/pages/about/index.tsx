@@ -17,12 +17,10 @@ export default function AboutPage() {
       </Head>
       <main className={styles.main}>
         <Socials />
-
         <div>
           <AboutMe />
           <div className={styles.infoContainer}>
             <PersonalInfo />
-            <hr></hr>
             <SwitchButton />
             <Skills />
           </div>
