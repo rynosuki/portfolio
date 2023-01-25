@@ -1,0 +1,78 @@
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languagesContainer {
+  position: relative;
+  height: 144px;
+  width: 40%;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.languagesContainer > h2 {
+  margin-bottom: 16px;
+}
+
+.personalInfoContainer {
+  position: relative;
+  width: 50%;
+  height: 144px;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
+.variableInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignedInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.filledCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgb(37, 36, 36);
+  background-color: rgb(37, 36, 36);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.unfilledCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgb(37, 36, 36);
+  background-color: rgb(255, 253, 250);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 0 0 0;
+}

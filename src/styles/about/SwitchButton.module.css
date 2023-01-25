@@ -1,0 +1,19 @@
+.switchButton {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 25%;
+  border: 0;
+}
+
+.switchButton:hover {
+  cursor: pointer;
+  border: 1px solid #97caca;
+  transition: 0.5s;
+}
+
+.buttonContainer {
+  position: relative;
+  left: 98%;
+}
