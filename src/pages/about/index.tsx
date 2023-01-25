@@ -1,13 +1,10 @@
 import styles from "@/styles/about/About.module.css";
-import profilePic from "/public/profile.jpg";
-import linkedin from "/public/linkedin.svg";
-import github from "/public/github.svg";
-import Image from "next/image";
 import Head from "next/head";
 import Skills from "./skills";
 import AboutMe from "./aboutme";
 import PersonalInfo from "./personalinfo";
 import SwitchButton from "./switchbutton";
+import Socials from "./socials";
 
 export default function AboutPage() {
   return (
@@ -19,44 +16,7 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.socialContainer}>
-          <div className={styles.socialDiv}>
-            <Image
-              src={profilePic}
-              alt="Profile"
-              className={styles.profilePicture}
-            />
-            <h3>ROBIN SVENSSON</h3>
-            <p>Full Stack Developer</p>
-            <div className={styles.socialIcons}>
-              <a
-                href="https://www.linkedin.com/in/robin-svensson-701366151/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  src={linkedin}
-                  alt="Twitter"
-                  className={styles.socialIcon}
-                />
-              </a>
-              <a
-                href="https://www.github.com/rynosuki/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  src={github}
-                  alt="Github"
-                  className={styles.socialIcon}
-                />
-              </a>
-            </div>
-          </div>
-          <div className={styles.downloadCV}>
-            <button className={styles.downloadButton}>DOWNLOAD CV</button>
-          </div>
-        </div>
+        <Socials />
 
         <div>
           <AboutMe />

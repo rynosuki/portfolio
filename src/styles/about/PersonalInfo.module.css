@@ -27,6 +27,37 @@
   flex-direction: column;
 }
 
+.personalInfoContainer > h2,
+.languagesContainer > h2 {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+
+.personalInfoContainer > h2::before,
+.languagesContainer > h2::before {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.personalInfoContainer > h2::after,
+.languagesContainer > h2::after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
 .infoDiv {
   display: flex;
   flex-direction: row;
@@ -75,4 +106,60 @@
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0 0 0 0;
+}
+
+.infoRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin-top: 2vh;
+  }
+
+  .infoContainer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 2vh;
+  }
+
+  .personalInfoContainer {
+    width: 100%;
+  }
+
+  .infoDiv {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .infoRow {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .languagesContainer {
+    width: 100%;
+  }
 }

@@ -7,9 +7,9 @@ export default function AboutMe() {
     <div className={styles.aboutMeContainer}>
       <h1>Hello it&apos;s Robin</h1>
       <p>
-        Hi there! I&apos;m Robin, a software engineer whom just graduated from{" "}
-        <b>Linnaeus University</b> with a <b>B.SC in Data Science</b>. I&apos;ve
-        mostly been working in <i>Java, Vanilla Javascript,Python and MySQL</i>.
+        Hi there! I&apos;m Robin, a software engineer soon to graduate from
+        <b> Linnaeus University</b> with a <b>B.Sc in Data Science</b>. I&apos;ve
+        mostly been working with <i>Java, Vanilla Javascript, Python and MySQL</i>.
         Work has been spread around in different areas such as web development,
         data science and machine learning. I&apos;ve also been working with
         different frameworks such as

@@ -6,19 +6,25 @@ export default function PersonalInfo() {
       <div className={styles.personalInfoContainer}>
         <h2>Personal Information</h2>
         <div className={styles.infoDiv}>
-          <div className={styles.variableInfo}>
+          <div className={styles.infoRow}>
             <p>FULL NAME</p>
-            <p>D.O.B.</p>
-            <p>ADDRESS</p>
-            <p>EMAIL</p>
-            <p>PHONE</p>
+            <p className={styles.infoIndentedText}>Robin Svensson</p>
           </div>
-          <div className={styles.assignedInfo}>
-            <p>Robin Svensson</p>
-            <p>March 1995</p>
-            <p>Kalmar, Sweden</p>
-            <p>robin.svensson.ee11a@gmail.com</p>
-            <p>+46 724 488 735</p>
+          <div className={styles.infoRow}>
+            <p>D.O.B.</p>
+            <p className={styles.infoIndentedText}>March 1995</p>
+          </div>
+          <div className={styles.infoRow}>
+            <p>ADDRESS</p>
+            <p className={styles.infoIndentedText}>Kalmar, Sweden</p>
+          </div>
+          <div className={styles.infoRow}>
+            <p>EMAIL</p>
+            <p className={styles.infoIndentedText}>robin.svensson.ee11a@gmail.com</p>
+          </div>
+          <div className={styles.infoRow}>
+            <p>PHONE</p>
+            <p className={styles.infoIndentedText}>+46 724 488 735</p>
           </div>
         </div>
       </div>
