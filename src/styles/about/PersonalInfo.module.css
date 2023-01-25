@@ -60,6 +60,7 @@
 }
 
 .infoDiv {
+  gap: 3px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -134,11 +135,11 @@
   margin-top: 2vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .infoContainer {
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 95%;
     margin-top: 2vh;
   }
@@ -149,13 +150,20 @@
 
   .personalInfoContainer {
     width: 100%;
+    max-width: 60%;
+    min-width: 384px;
+  }
+
+  .languagesContainer {
+    width: 100%;
+    max-width: 60%;
+    min-width: 384px;
   }
 
   .infoDiv {
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 3px;
   }
 
   .infoRow {
@@ -163,7 +171,4 @@
     justify-content: space-between;
   }
 
-  .languagesContainer {
-    width: 100%;
-  }
 }
