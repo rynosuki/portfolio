@@ -21,7 +21,6 @@ export default function Projects() {
       <div id="projects">
         <div className={styles.header}>
           <h2>Projects</h2>
-          <h2>Description</h2>
         </div>
         <p>Loading...</p>
       </div>
@@ -34,23 +33,26 @@ export default function Projects() {
     <div id="projects" className={styles.layout}>
       <div className={styles.header}>
         <h2>Projects</h2>
-        <h2>Description</h2>
       </div>
-      {repos.map((repo) => {
-        return (
-          <div key={repo.id} className={styles.linkContainer}>
-            <a
-              href={repo.html_url}
-              target="_blank"
-              rel="noreferrer"
-              className={styles.link}
-            >
-              {repo.name}
-            </a>
-            <p>{repo.description}</p>
-          </div>
-        );
-      })}
+      <div className={styles.links}>
+        {repos.map((repo) => {
+          return (
+            <div key={repo.id} className={styles.linkContainer}>
+              <a
+                href={repo.html_url}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                {repo.name}
+              </a>
+              <p>
+                <i>{repo.description}</i>
+              </p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
