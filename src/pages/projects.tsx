@@ -56,9 +56,7 @@ export default function Projects() {
 }
 
 export async function getGitHubRepos() {
-  const octokit = new Octokit({
-    auth: "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",
-  });
+  const octokit = new Octokit();
   const repos = await octokit
     .request(
       "GET /users/{username}/repos{?type,sort,direction,per_page,page}",
