@@ -63,7 +63,7 @@ export async function getGitHubRepos() {
     .request(
       "GET /users/{username}/repos{?type,sort,direction,per_page,page}",
       {
-        username: "Rynosuki",
+        username: "rynosuki",
       }
     )
     .then((res) => {
