@@ -26,7 +26,7 @@ export default function AboutMe() {
 }
 
 async function shareClick () {
-  await navigator.clipboard.writeText("https://rynosuki.dev/about").then(() => {
+  await navigator.clipboard.writeText("https://rynosuki.dev/").then(() => {
     const button = document.getElementById("shareButton")
     if (button === null) {
       return
