@@ -119,6 +119,7 @@
   }
 
   .skillsContainer {
+    padding-top: 0;
     width: 100%;
   }
 }

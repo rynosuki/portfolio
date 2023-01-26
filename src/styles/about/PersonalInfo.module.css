@@ -40,7 +40,7 @@
 .languagesContainer > h2::before {
   content: '';
   display: block;
-  width: 15%;
+  width: 10%;
   height: 2px;
   background: #97caca;
   position: absolute;
@@ -48,16 +48,24 @@
   left: 0;
 }
 
+.languagesContainer > h2::before {
+  width: 25%;
+}
+
 .personalInfoContainer > h2::after,
 .languagesContainer > h2::after {
   content: '';
   display: block;
-  width: 15%;
+  width: 10%;
   height: 2px;
   background: #97caca;
   position: absolute;
   top: 50%;
   right: 0;
+}
+
+.languagesContainer > h2::after {
+  width: 25%;
 }
 
 .infoDiv {
@@ -149,16 +157,13 @@
     height: 1px;
   }
 
-  .personalInfoContainer {
+  .personalInfoContainer,
+  .languagesContainer {
     width: 100%;
-    max-width: 60%;
-    min-width: 384px;
   }
 
   .languagesContainer {
-    width: 100%;
-    max-width: 60%;
-    min-width: 384px;
+    margin-top: 2vh;
   }
 
   .infoDiv {

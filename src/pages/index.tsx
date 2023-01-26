@@ -17,7 +17,7 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>
+        <div className={styles.socials}>
         <Socials />
         <Skills />
         </div>

@@ -12,21 +12,60 @@
 
 .linkContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 0 10%;
 }
 
 .header {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.layout {
-  display: inline-block;
-  width: 100%; 
+.header > h2::before {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #97caca;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.header > h2::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #97caca;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+@media (max-width : 768px) {
+  .layout {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
