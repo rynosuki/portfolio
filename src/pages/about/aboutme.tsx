@@ -17,10 +17,24 @@ export default function AboutMe() {
         options. I&apos;m currently looking for a job as a software engineer /
         software developer.
       </p>
-      <button className="shareButton">
+      <button id="shareButton" className={styles.shareLink} onClick={shareClick}>
         <Image src={sharePic} alt="Share" className={styles.shareButton} />
-        Share
+        Copy link
       </button>
     </div>
   );
+}
+
+async function shareClick () {
+  await navigator.clipboard.writeText("https://rynosuki.dev/about").then(() => {
+    const button = document.getElementById("shareButton")
+    if (button === null) {
+      return
+    }
+    const buttonContent = button.innerHTML
+    button.innerHTML = "Copied!"
+    setTimeout(() => {
+      button.innerHTML = buttonContent
+    }, 1000)
+  })
 }

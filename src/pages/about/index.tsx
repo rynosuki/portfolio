@@ -5,6 +5,7 @@ import AboutMe from "./aboutme";
 import PersonalInfo from "./personalinfo";
 import SwitchButton from "./switchbutton";
 import Socials from "./socials";
+import Projects from "./projects";
 
 export default function AboutPage() {
   return (
@@ -16,13 +17,16 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div>
         <Socials />
+        <Skills />
+        </div>
         <div>
           <AboutMe />
-          <div className={styles.infoContainer}>
+          <div id="information" className={styles.infoContainer}>
             <PersonalInfo />
-            <SwitchButton />
-            <Skills />
+            {/* <SwitchButton /> */}
+            <Projects />
           </div>
         </div>
       </main>

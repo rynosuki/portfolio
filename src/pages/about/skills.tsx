@@ -2,10 +2,10 @@ import styles from "@/styles/about/Skills.module.css";
 
 export default function Skills() {
   return (
-    <div className={styles.skillsContainer}>
+    <div id='skills' className={styles.skillsContainer}>
       <div className={styles.skillsDiv}>
         <h2>Skills</h2>
-        <h4>(based on feeling of confidence in the language)</h4>
+        <h4>(confidence level)</h4>
         <div className={styles.skills}>
           <div className={styles.skill}>
            <p>Python</p>

@@ -42,6 +42,10 @@
   padding: 0 0 0 0;
 }
 
+.shareLink {
+  width: 20%;
+}
+
 @media (max-width: 1280px) {
   .aboutMeContainer {
     width: 100%;
