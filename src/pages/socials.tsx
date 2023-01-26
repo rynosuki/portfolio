@@ -1,8 +1,8 @@
 import Image from "next/image"
 import styles from "@/styles/about/Socials.module.css"
-import profilePic from "/public/profile.jpg";
-import linkedin from "/public/linkedin.svg";
-import github from "/public/github.svg";
+import profilePic from "/public/profile.jpg"
+import linkedin from "/public/linkedin.svg"
+import github from "/public/github.svg"
 
 export default function Socials () {
   return (
@@ -41,7 +41,7 @@ export default function Socials () {
             </div>
           </div>
           <div className={styles.downloadCV}>
-            <button className={styles.downloadButton}>DOWNLOAD CV</button>
+            <a href="/cv.pdf" download rel="noopener noreferrer" className={styles.downloadButton}>DOWNLOAD CV</a>
           </div>
         </div>
   )

@@ -50,4 +50,9 @@
   .aboutMeContainer {
     width: 100%;
   }
+  
+  .shareLink {
+    left: 25%;
+    width: 50%;
+  }
 }
