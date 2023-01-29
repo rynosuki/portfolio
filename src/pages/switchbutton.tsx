@@ -4,15 +4,15 @@ import styles from "@/styles/about/SwitchButton.module.css";
 import { useState } from "react";
 import Projects from "./projects";
 import ReactDOM from "react-dom";
-import Skills from "./skills";
+import Discord from "./discordclone";
 
 export default function SwitchButton() {
   const [isSwitched, setIsSwitched] = useState(false);
   const switchView = () => {
     if (isSwitched) {
-      ReactDOM.render(<Skills />, document.getElementById('skills'))
+      ReactDOM.render(<Projects />, document.getElementById('projects'))
     } else {
-      ReactDOM.render(<Projects />, document.getElementById('skills'))
+      ReactDOM.render(<Discord />, document.getElementById('projects'))
     }
     setIsSwitched(!isSwitched)
   }

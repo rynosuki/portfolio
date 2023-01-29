@@ -1,0 +1,190 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header > h2::before {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #97caca;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.header > h2::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #97caca;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.discordWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+.navBar {
+  position: relative;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e2124;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow-y: scroll;
+}
+
+.navBar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.channelName {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1rem;
+}
+
+.channelName > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: ease-in-out 0.2s;
+}
+
+.channelName > img:hover {
+  transform: scale(1.1);
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.channelName:hover::before {
+  width: 10px;
+  height: 20px;
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -65%;
+  background-color: white;
+  border-radius: 25%;
+}
+
+.discordChannel {
+  position: relative;
+  display: flex;
+  width: 90%;
+}
+
+.channelNavbar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-color: #282b30;
+  color: 	#424549;
+}
+
+.channels {
+  padding: 4px;
+}
+
+.channels > h3 {
+  padding: 4px;
+}
+
+.channels > h3::before {
+  content: "#-";
+}
+
+.channels > h3:hover {
+  background-color: #1e2124;
+  border-radius: 10%;
+}
+
+.channelImg {
+  height: 30%;
+}
+
+.channelImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.channelUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  background-color: #222429;
+}
+
+.channelUser img {
+  width: 25%;
+  height: 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.channelTextWindow {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color:#36393e;
+}
+
+.channelUsers {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-color: #1e2124;
+}
+
+.channelChatBar {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: #1e2124;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;  
+  bottom: 0;
+}
+
+.addContent {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}

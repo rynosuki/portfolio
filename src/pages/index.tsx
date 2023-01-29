@@ -25,7 +25,7 @@ export default function AboutPage() {
           <AboutMe />
           <div id="information" className={styles.infoContainer}>
             <PersonalInfo />
-            {/* <SwitchButton /> */}
+            <SwitchButton />
             <Projects />
           </div>
         </div>
