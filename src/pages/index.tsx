@@ -17,11 +17,12 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.background}></div>
         <div className={styles.socials}>
         <Socials />
         <Skills />
         </div>
-        <div>
+        <div className={styles.infoWrapper}>
           <AboutMe />
           <div id="information" className={styles.infoContainer}>
             <PersonalInfo />
