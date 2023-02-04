@@ -160,10 +160,23 @@
   .personalInfoContainer,
   .languagesContainer {
     width: 100%;
+    max-width: 100%;
   }
 
   .languagesContainer {
     margin-top: 2vh;
+  }
+
+  .languageDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .languageDiv > div {
+    padding-bottom: 16px;
+    width: 60%;
   }
 
   .infoDiv {
